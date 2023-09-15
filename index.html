@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <div class="container" >
+      <div class="btn-container"><button class="signin">Sign in</button><button class="signup">Sign up</button></div>
+
+      <form class="signin-form">
+        <input class="signin-email" type="email" required placeholder="Enter email" />
+        <input class="signin-pass" type="password" required placeholder="Enter Password" />
+        <button class="login">Login</button>
+        <p onclick="forgetPassword()" class="forget"><u>forget password ?</u></p>
+        <p>Don't have an account ? <span onclick="handleCreateone()"><b>create one</b></span></p>
+        <p class="signin-error"></p>
+      </form>
+
+      <form  class="signup-form">
+        <input class="signup-email" type="email" required placeholder="Enter email" />
+        <input class="signup-pass" type="password" required placeholder="Enter Password" />
+        <input class="signup-confirmPass" type="password" required placeholder="Enter confirm Password" />
+        <input class="signup-petName" type="text" required placeholder="Enter your secret code for security." />
+        <button class="register">Register</button>
+        <p onclick="" class="continue-guest">Continue as a <span onclick="continueAsGuest()"><b>Guest</b></span></p>
+        <p>have an account ? <span onclick="haveAnAccount()"><b>login</b></span></p>
+        <p class="signup-error"></p>
+      </form>
+
+      <form class="changePass-form" action="">
+        <span>Reset Password</span>
+        <input class="retrieve-email" type="text" placeholder="Enter email">
+        <input class="secret-code" type="text" placeholder="Enter your secret code">
+        <p class="reset-error reset-success"></p>
+        <div class="change-pass">
+          <input class="new-pass" type="text" placeholder="Enter new password">
+          <input class="confirm-new-pass" type="text" placeholder="Enter new confirm password">
+          <button class="reset" onclick="resetPassword()">Change Password</button>
+          
+        </div>
+      </form>
+    </div>
+      
+    <script src="script.js"></script>
+
+  </body>
+</html>
+
+
